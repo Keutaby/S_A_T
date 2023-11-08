@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Formulario SAT</title>
+</head>
+<body>
+    <h1>Formulario SAT</h1>
+    <form class="declara" id="contact_form" action="#">
+        <ul>
+            <li>
+                <span class="required notification">*Agregue sus Datos</span>
+            </li>
+
+            <li>
+                <label for="numero">Numero Derecho Habiente</label>
+                <input type="text" name="numero" pattern="[A-Z a-z].{11,}" placeholder="11 caracteres" maxlength="11" required>
+            </li>
+
+            <li>
+                <label for="nombre">Nombre</label>
+                <input type="name" name="nombre" pattern="[A-Z a-z]+" placeholder="10 a 15 caracteres" maxlength="15" required>
+            </li>
+
+            <li>
+                <label for="apellido">Apellido</label>
+                <input type="name" name="apellido" pattern="[A-Z a-z]+" placeholder="15 a 20 caracteres" maxlength="20" required>
+            </li>
+
+            <li>
+                <label for="sangre">Tipo Sangre</label>
+                <select name="sangre" id="" required>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+            </li>
+
+            <li>
+                <label for="edad">Edad</label>
+                <input type="text" name="edad" pattern="{2,}" placeholder="1 a 2 caracteres" maxlength="2" required>
+            </li>
+
+            <li>
+                <label for="especialidad">Especialidad</label>
+                <input type="text" name="especialidad" pattern="[A-Z a-z]+" placeholder="15 a 20 caracteres" maxlength="20" required>
+            </li>
+                <p>Telefono</p>
+            <li>
+                <label for="lada"></label>
+                <input type="text" name="lada" pattern="{3,}" placeholder="3 caracteres" maxlength="3" required>
+            </li>
+
+            <li>
+                <label for="numero"></label>
+                <input type="text" name="numero" pattern="{15,}" placeholder="10 a 15 caracteres" maxlength="15" required>
+            </li>
+
+            <li>
+                <label for="correo">Correo</label>
+                <input type="email" name="correo" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" placeholder="correo electronico" maxlength="325">
+
+            <li>
+                <label for="periodo">Mes</label>
+                <select name="periodo" id="" required>
+                    <option value="">opci&oacute;n</option>
+                    <option value="Enero">Enero</option>
+                    <option value="Febrero">Febrero</option>
+                    <option value="Marzo">Marzo</option>
+                    <option value="Abril">Abril</option>
+                    <option value="Mayo">Mayo</option>
+                    <option value="Junio">Junio</option>
+                    <option value="Julio">Julio</option>
+                    <option value="Agosto">Agosto</option>
+                    <option value="Septiembre">Septiembre</option>
+                    <option value="Octubre">Octubre</option>
+                    <option value="Noviembre">Noviembre</option>
+                    <option value="Diciembre">Diciembre</option>
+                </select>
+            </li>
+
+            <li>
+                <label for="fecha">¿Qu&eacute; d&iacute; a es hoy?</label>
+                <input type="date" name="fecha" min="2022-10-25" max="2023-10-25" value="<?php echo('Y-M-D');?>" maxlength="10">
+            </li>
+
+            <li>
+                <button class="submit" type="submit">Enviar</button>
+            </li>
+        </ul>
+    </form>
+</body>
+</html>
